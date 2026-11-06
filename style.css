@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #090d19;
+    --card: #11182b;
+    --purple: #8b5cf6;
+    --cyan: #22d3ee;
+    --text: #f5f6ff;
+    --muted: #929bb7;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+
+    font-family: 'Inter', sans-serif;
+    color: var(--text);
+
+    background:
+        radial-gradient(
+            circle at top left,
+            #272052 0%,
+            transparent 42%
+        ),
+        radial-gradient(
+            circle at bottom right,
+            #103443 0%,
+            transparent 38%
+        ),
+        var(--background);
+}
+
+.login-container {
+    width: 100%;
+    max-width: 430px;
+    padding: 38px;
+
+    background: var(--card);
+    border: 1px solid #ffffff18;
+    border-radius: 24px;
+
+    box-shadow: 0 25px 80px #00000050;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.logo-icon {
+    width: 66px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 12px;
+    color: white;
+
+    background: linear-gradient(
+        135deg,
+        var(--purple),
+        var(--cyan)
+    );
+
+    border-radius: 21px;
+    box-shadow: 0 10px 30px #8b5cf635;
+}
+
+.logo-icon svg {
+    width: 44px;
+    height: 44px;
+}
+
+.logo h1 {
+    font-size: 35px;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+
+.logo h1 span {
+    color: var(--cyan);
+}
+
+.tagline {
+    margin-top: 5px;
+    color: var(--muted);
+    font-size: 9px;
+    letter-spacing: 3px;
+}
+
+.welcome {
+    margin-bottom: 27px;
+}
+
+.welcome h2 {
+    font-size: 27px;
+    margin-bottom: 9px;
+}
+
+.welcome p {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 9px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px 15px;
+
+    color: var(--text);
+    background: #0b1120;
+    border: 1px solid #303a56;
+    border-radius: 11px;
+
+    outline: none;
+    font-size: 13px;
+    transition: 0.25s;
+}
+
+.input-group input::placeholder {
+    color: #697590;
+}
+
+.input-group input:focus {
+    border-color: var(--purple);
+    box-shadow: 0 0 0 3px #8b5cf625;
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    margin: 4px 0 23px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: #c1c8dd;
+    font-size: 11px;
+}
+
+.remember input {
+    accent-color: var(--purple);
+}
+
+.secure-note {
+    color: var(--muted);
+    font-size: 10px;
+}
+
+.login-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    padding: 15px;
+    color: white;
+
+    background: linear-gradient(
+        110deg,
+        var(--purple),
+        #5969dc,
+        #168ba7
+    );
+
+    border: none;
+    border-radius: 11px;
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.login-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px #6855e844;
+}
+
+.arrow {
+    font-size: 19px;
+}
+
+.message {
+    min-height: 18px;
+    margin-top: 12px;
+    text-align: center;
+    color: #fda4af;
+    font-size: 12px;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 15px 0 23px;
+    color: #697590;
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    height: 1px;
+    flex: 1;
+    background: #ffffff15;
+}
+
+.signup {
+    text-align: center;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.signup button {
+    margin-left: 4px;
+    padding: 0;
+    color: #b8a7ff;
+    background: none;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.signup button:hover {
+    color: var(--cyan);
+}
+
+.footer {
+    margin-top: 25px;
+    text-align: center;
+    color: #68738e;
+    font-size: 10px;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 16px;
+    }
+
+    .login-container {
+        padding: 28px 22px;
+    }
+
+    .welcome h2 {
+        font-size: 24px;
+    }
+}
