@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Voxa | Login</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+
+                <svg viewBox="0 0 48 48">
+
+                    <path d="M10 10 H38 V28 Q38 34 32 34 H22 L12 41 V34 H10 Z"
+
+                          fill="currentColor"/>
+
+                    <path d="M17 18 L24 28 L31 18"
+
+                          fill="none"
+
+                          stroke="#15152c"
+
+                          stroke-width="3"
+
+                          stroke-linecap="round"
+
+                          stroke-linejoin="round"/>
+
+                </svg>
+
+            </div>
+
+            <h1>voxa<span>.</span></h1>
+
+            <p class="tagline">MESSAGES THAT MOVE</p>
+
+        </div>
+
+        <div class="welcome">
+
+            <h2>Welcome back!</h2>
+
+            <p>Sign in to continue your journey.</p>
+
+        </div>
+
+        <form id="loginForm">
+
+            <div class="input-group">
+
+                <label for="username">Username</label>
+
+                <input type="text" id="username"
+
+                       placeholder="Enter your username" required>
+
+            </div>
+
+            <div class="input-group">
+
+                <label for="password">Password</label>
+
+                <input type="password" id="password"
+
+                       placeholder="Enter your password" required>
+
+            </div>
+
+            <button type="submit" class="login-button">
+
+                Sign In →
+
+            </button>
+
+            <p id="message" class="message"></p>
+
+        </form>
+
+        <p class="signup">
+
+            New to Voxa?
+
+            <button type="button" id="signupButton">
+
+                Create account
+
+            </button>
+
+        </p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
